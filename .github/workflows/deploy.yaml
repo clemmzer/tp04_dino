@@ -22,4 +22,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v32
       - name: Deploy to production
-        run: echo "Deploying to production..."
+        run: "npm run deploy"
