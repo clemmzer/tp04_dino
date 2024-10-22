@@ -19,9 +19,9 @@ jobs:
     steps:
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v2
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v32
       - name: Build before deploy
         run: npm run predeploy
       - name: Deploy to production
         run: npm run deploy
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v32
